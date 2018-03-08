@@ -1,0 +1,39 @@
+#twitter{
+  width: 33px;
+  height: 33px;
+  background: transparent url("recursos/rrss.jpg");
+  background-position: -32px 0px;
+  transition:background-position .1s ease-out;
+
+  }
+  
+#facebook{
+   width: 33px;
+  height: 33px;
+  background: transparent url("recursos/rrss.jpg");
+  background-position: -64px 0px;
+  transition-property: background-position;
+  transition-duration: .1s;
+  transition-timing-function:ease-out;
+  }
+
+#twitter:hover{
+  background-position: -32px -32px;
+}
+
+#facebook:hover{
+  background-position: -64px -33px;
+}
+
+
+
+/* Dejamos una separación entre los enlaces */
+#social .twitter{
+ margin-left: 37%; 
+ margin-bottom: 2%;
+}
+
+#social .facebook{
+ margin-left: 4%;
+ margin-bottom: 2%; 
+}

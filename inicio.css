@@ -1,0 +1,141 @@
+div
+{
+	font-family: 'Faustina', serif,  Arial, Georgia, Serif;
+}
+
+ body 
+ {
+	background-image: url("recursos/imagen1.jpg");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	overflow-x: hidden;
+ }
+
+ #principal, #enlaces
+ {
+	border: 3px solid #B56802;
+	background-color: #FFAA38;	
+ }
+
+ #piePagina
+ {
+	border: 3px solid #05375D;
+	background-color: #769EBD;
+ }
+
+ #jumbo
+ {
+ 	background-image: url("recursos/titulo.jpg");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+ }
+
+/* transiciones*/
+
+/*1*/
+#enlaces
+{
+	width: 10%;
+	height: 55px;
+	overflow-y:hidden;
+	transition: all 0.4s;
+	
+}
+
+#enlaces:hover
+{
+	width: 30%;
+	height: 890px;
+}
+
+
+/*2*/
+h1,.text-center
+{
+	color: black;
+	transition: all 4s;
+}
+
+h1,.text-center:hover
+{
+	color: blue;
+}
+
+
+
+ /*transformaciones */
+ /*1*/
+.navbar-brand
+{
+	transform-origin: center left;
+	transition: transform 2s, transform 2s;	
+}
+
+.navbar-brand:hover
+{
+	transform: rotate(10deg);
+
+}
+
+/*2*/
+.thumbnail img{
+	transform-origin: center left;
+	z-index: 2;
+	transition: transform 2s, transform 2s;
+
+}
+
+.thumbnail img:hover{
+	transform: scale(1.1,1.1);
+}
+
+
+ /*keyframes*/
+.alert{
+	animation-name: animarAlert;
+	animation-duration: 40s;
+  	animation-iteration-count: infinite;
+
+}
+
+@keyframes animarAlert
+{
+	  0% { /*marca el instante inicial*/
+  	transform: translate(-80rem, 0rem);
+
+  }
+    100% { 
+  	transform: translate(90rem, 0rem);
+
+  }
+
+}
+
+
+
+
+h1
+{
+	animation-name: animarTitulo;
+	animation-duration: 10s;
+  	animation-iteration-count: 1;
+}
+
+
+@keyframes animarTitulo
+{
+	  0% { /*marca el instante inicial*/
+  	transform: translate(-30rem, 0rem) scale(1,1);
+
+  }
+    50% { /*marca el instante inicial*/
+  	transform: translate(-5rem, 0rem) scale(2,2);
+
+  }
+
+    100% { 
+  	transform: translate(0rem, 0rem) scale(1,1);;
+
+  }
+
+}
